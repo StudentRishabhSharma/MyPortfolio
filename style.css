@@ -113,14 +113,15 @@ html {
   color: var(--primary);
   opacity: 1;
   margin-left: 30%;
-  width: 150%;
+  width: 140%;
   animation: slideBottom 1s ease forwards;
   animation-delay: 0.7s;
 }
 .home img {
-    height: 100vh;
-    margin-right: 10rem;
-    margin-top: 20rem;
+    height: 90vh;
+    margin-right: 9rem;
+    margin-top: 10rem;
+    width: 100%;
     filter: drop-shadow(0px 50px 50px rgb(0, 0, 0));
 }
 .home-content h3:nth-of-type(2) {
@@ -139,7 +140,7 @@ html {
   margin: -3px 0;
   margin-bottom: -4%;
   opacity: 1;
-  width: 150%;
+  width: 140%;
   margin-left: 30%;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
@@ -167,12 +168,6 @@ html {
 
 .cv1 {
   display: none;
-}
-.hero img {
-  margin-top: 30%;
-  margin-left: 20%;
-  max-height: 0%;
-  max-width: 60%;
 }
 
 /* About Section */
@@ -347,6 +342,7 @@ html {
 .services {
   margin-top: -5%;
   padding: 10% 5%;
+  padding-bottom: 35rem;
   background-image: url("file_000000000e3c51f8a94a8381e07c9573_conversation_id=67f4deb7-2a2c-8011-8394-c22d2f53a80f&message_id=4b2db722-e8c8-4c3e-bdf5-0adab1b7b529.webp");
   background-size: cover;
   background-color: #000000;
@@ -437,8 +433,8 @@ img {
   display: flex;
   justify-content: center;
   width: 30%;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin-top: 35%;
+  margin-bottom: 3%;
   margin-left: 70%;
   color: #ffffff;
   background-color: var(--primary);
@@ -829,6 +825,7 @@ footer p {
     right: 0;
     width: 100%;
     text-align: center;
+    transition: color 0.3s ease;
   }
 
   /* Show when active */
@@ -840,6 +837,7 @@ footer p {
   .nav-links li {
     margin: 0px 0;
     padding: 1rem;
+    transition: color 0.3s ease;
   }
 
   /* Anchor Tags */
@@ -995,25 +993,33 @@ footer p {
     color: #ffffff;
     text-decoration: none;
   }
-  .smlink:hover {
+  .socialmedia a:hover {
     color: var(--primary);
     text-decoration: none;
   }
+  .smedia h1 {
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding: 10%;
+    width: 100%;
+    background-color: var(--primary);
+  }
   .smedia {
     width: 10%;
-    margin: 0.5rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    align-items: center;
   }
   .smedia a {
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
   }
 
-  .smedia:hover {
+  .smlink:hover {
     color: var(--primary);
     cursor: pointer;
   }
@@ -1151,7 +1157,7 @@ footer p {
     justify-content: center;
     width: 50%;
     margin-top: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
     margin-left: 5%;
     color: #ffffff;
     background-color: var(--primary);
@@ -1196,6 +1202,7 @@ footer p {
   place-content: center;
   position: relative;
   padding-top: 2rem;
+  margin: 1rem;
 }
 
 .prj .title {
@@ -1215,22 +1222,28 @@ footer p {
 }
 
 .card__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2, 1fr);
+ 
   align-items: center;
-  padding: 0 2.5rem;
+  justify-items: center;
+  margin-bottom: 0rem;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .card__article {
+  margin-left: 1rem;
+  margin-right: 0rem;
   width: 100% ;
-  height: 40vh;
-  margin: -0.8rem;
+  height: 30vh;
   padding: 0;
 }
 
 .card__data {
   width: 100%;
-  font-size: 2rem;
+  padding: 0;
 }
 
 
@@ -1242,6 +1255,18 @@ footer p {
   transition: transform 0.4s;
 }
 
+.cardp {
+  display: flex;
+  flex-direction: column;
+}
+.card__data {
+padding: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 60%;
+}
+
 
 /* Red clip icon */
 .card__clip {
@@ -1249,18 +1274,26 @@ footer p {
   top: 88%;
   right: 6%;
   background-color: var(--primary);
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   z-index: 5;
   cursor: pointer;
   transition: transform 0.4s;
 }
-
+.card__name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  }
+  
+  .card__profession {
+  font-size: 15px;
+  }
+  
 
 
 /*=============== CARD INFO ===============*/
@@ -1283,40 +1316,32 @@ footer p {
 .info.open {
     clip-path: circle(100%);
   }
-.infodata {
-  padding: 1rem 4rem 0 2rem;
-}
-.infodata h2 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  margin-top: 1.5rem;
-}
-.infodata p {
-  font-weight: 300;
-  line-height: 1.4;
-}
-.info .infosocial {
-  position: absolute;
-  padding: 0 4rem 1rem 2rem;
-  bottom: 1.5rem;
-  display: flex;
-  column-gap: 0.75rem;
-}
 
-.info .infosocial a {
-  background-color: white;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 10rem;
-  display: grid;
-  place-items: center;
-  font-size: 1.5rem;
-  color: var(--primary);
-  transition: 0.4s;
-}
-.infosocial a:hover {
-    background-color: red;
-    color: white;
+  .infodata {
+    padding: 0rem 1rem 0 1rem;
+  }
+  .infodata h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .infodata p {
+    font-size: 14.5px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  .info .infosocial {
+    position: absolute;
+    padding: 0 0rem 0rem 1rem;
+    bottom: 1.5rem;
+    display: flex;
+    column-gap: 0.75rem;
+  }
+  
+  .info .infosocial a {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
 .card__article .card__img.scale-down {
@@ -1381,7 +1406,7 @@ footer p {
   .contact-left {
     flex: 1;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 10%;
   }
   
@@ -1447,9 +1472,21 @@ footer p {
 .contact-right textarea {
   font-size: 15px;
 }
+.contact-right input,
+.contact-right textarea {
+  width: 140%;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #222;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
 .contact-right button {
   width: 40%;
-  padding: 10px;
+  padding: 8px;
   border: none;
   border-radius: 5px;
   font-size: 15px;
@@ -1459,11 +1496,6 @@ footer p {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
-.contact-right button:hover {
-  background-color: var(--primary);
-}
-  
 footer {
   font-size: 12px;
   padding: 15px;
@@ -1473,6 +1505,104 @@ footer {
   border-top: 1px solid #333;
 }
 
+}
 
+@media (max-width: 409px) {
+  
+  .home h2 {
+    margin-left: 20%;
+  }
+  .home-content h3 {
+    margin-left: 7%;
+  }
+  .home-content h1 {
+    margin-left: 20%;
+    width: 300%;
+  }
 
+  .cv1 {
+    margin-left: 20%;
+  }
+  
+  .home img {
+    margin-right: 0;
+    margin-left: 2rem;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .skills-grid {
+    width: 100%;
+    height: auto;
+  }
+  .grid {
+    width: 100%;
+  }
+  
+  .skill-item {
+    margin-left: 0;
+    margin-right: 0;
+    height: 5.3rem;
+  }
+  .card__container {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+   
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0rem;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+  }
+  
+  .card__article {
+    margin-left: 0.8rem;
+    margin-right: 0rem;
+    width: 100% ;
+    height: 30vh;
+    padding: 0;
+  }
+  
+  
+  .card__img {
+    height: 55%;
+  }
+  
+  .card__name {
+  font-size: 1.5rem;
+  }
+  
+  .card__profession {
+  font-size: 15px;
+  }
+  
+  .infodata {
+    padding: 0rem 1rem 0 1rem;
+  }
+  .infodata h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .infodata p {
+    font-size: 14.5px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  .info .infosocial {
+    position: absolute;
+    padding: 0 0rem 0rem 1rem;
+    bottom: 1.5rem;
+    display: flex;
+    column-gap: 0.75rem;
+  }
+  
+  .info .infosocial a {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+    
+  
 }
