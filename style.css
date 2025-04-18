@@ -297,7 +297,7 @@ html {
   margin: 2% 0 0 5%;
 }
 .skills-grid {
-  width: 45%;
+  width: 55%;
   height: auto;
   margin-right: 5rem;
 }
@@ -784,7 +784,7 @@ footer p {
   margin: 0;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1912px) {
   .home-content {
     margin-left: 14rem;
   }
