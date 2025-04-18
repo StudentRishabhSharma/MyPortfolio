@@ -873,15 +873,18 @@ footer p {
 
   .home h2 {
     font-size: 1rem;
-    margin-left: 25%;
+    margin-left: 20%;
     font-weight: 400;
+  }
+  .home-content{
+    margin-left: 0;
   }
   .home-content h3 {
     position: absolute;
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--primary);
-    margin-left: 12.5%;
+    margin-left: 10%;
     width: 100%;
     animation: slideBottom 1s ease forwards;
     animation-delay: 0.7s;
@@ -901,7 +904,7 @@ footer p {
     font-weight: 700;
     font-family: "Boldonse", system-ui;
     width: 150%;
-    margin-left: 25%;
+    margin-left: 20%;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
   }
@@ -914,7 +917,7 @@ footer p {
   .cv1 {
     display: flex;
     margin-top: 1.4rem;
-    margin-left: 25%;
+    margin-left: 20%;
     height: auto;
     width: 100%;
   }
@@ -946,7 +949,7 @@ footer p {
   .home img {
     margin-right: 25px !important;
     margin-top: 30px !important;
-    width: 95%;
+    width: 100%;
     height: 20vh;
   }
 
