@@ -98,7 +98,7 @@ html {
   background-image: url("file_00000000acec51f8833ae983a5a2b090_conversation_id=67f4deb7-2a2c-8011-8394-c22d2f53a80f&message_id=d4f3ddfe-d436-41ae-ab1a-57df5be68d42.webp");
 }
 .home-content {
-  margin-left: 8rem;
+  margin-left: 6rem;
   max-width: 600px;
 }
 .home h2 {
@@ -123,7 +123,7 @@ html {
   height: 90vh;
   margin-right: 9rem;
   margin-top: 10rem;
-  width: 100%;
+  width: 90%;
   filter: drop-shadow(0px 50px 50px rgb(0, 0, 0));
 }
 .home-content h3:nth-of-type(2) {
