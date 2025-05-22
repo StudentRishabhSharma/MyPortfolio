@@ -34,9 +34,8 @@ html {
 
 .navbar .logo {
   margin-left: 3%;
-  font-size: 1.8em;
+  font-size: 1.5rem;
   font-weight: bold;
-  font-style: italic;
 }
 .logo a {
   text-decoration: none;
@@ -345,9 +344,9 @@ html {
   margin-top: -5%;
   padding: 10% 5%;
   padding-bottom: 35rem;
-  background-image: url("file_000000000e3c51f8a94a8381e07c9573_conversation_id=67f4deb7-2a2c-8011-8394-c22d2f53a80f&message_id=4b2db722-e8c8-4c3e-bdf5-0adab1b7b529.webp");
+  /*background-image: url("file_000000000e3c51f8a94a8381e07c9573_conversation_id=67f4deb7-2a2c-8011-8394-c22d2f53a80f&message_id=4b2db722-e8c8-4c3e-bdf5-0adab1b7b529.webp");*/
   background-size: cover;
-  background-color: #000000;
+  background-color: #24242400;
   clip-path: polygon(
     0 5%,
     30% 10%,
@@ -1094,7 +1093,7 @@ footer p {
 
   /* Logo */
   .navbar .logo {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   /* Hamburger Button */
